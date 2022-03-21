@@ -1,0 +1,15 @@
+.results-list {
+  max-height: 480px;
+  overflow-y: auto;
+
+  @media only screen and (max-width: 768px) {
+    max-height: 100%;
+  }
+
+  &__button {
+    @media only screen and (max-width: 768px) {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+}

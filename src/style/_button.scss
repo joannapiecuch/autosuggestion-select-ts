@@ -1,0 +1,30 @@
+@import "variables";
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  background-color: transparent;
+
+  &:focus, &:focus-visible {
+    outline: none;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 18px 16px;
+  width: 100%;
+  font-size: 16px;
+
+  &[disabled] {
+    background-color: $color-divider;
+    cursor: default;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
